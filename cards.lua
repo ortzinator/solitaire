@@ -44,14 +44,14 @@ function Card:Draw(pos)
 		-- end
 		-- love.graphics.setFont(cardFont)
 		-- love.graphics.print(self.value .. self.suit, pos.x + 10, pos.y + 10)
-		love.graphics.drawq(cardTiles, quads[self.suit][self.value], pos.x, pos.y)
+		love.graphics.draw(cardTiles, quads[self.suit][self.value], pos.x, pos.y)
 	else
 		-- love.graphics.setColor(0, 0, 156)
 		-- love.graphics.rectangle("fill", pos.x-1, pos.y-1, cardWidth+2, cardHeight+2)
 		-- love.graphics.setColor(0, 0, 0)
 		-- love.graphics.rectangle("line", pos.x, pos.y, cardWidth, cardHeight)
 		love.graphics.setColor(255, 255, 255)
-		love.graphics.drawq(cardTiles, blankQuad, pos.x, pos.y)
+		love.graphics.draw(cardTiles, blankQuad, pos.x, pos.y)
 	end
 end
 
