@@ -3,7 +3,7 @@ function love.conf(t)
 	t.author = "Brian Ortiz 'Ortzinator' - me@ortz.org"
 	--t.console = true
 	--t.screen.fsaa = 4
-	t.screen.width = 1280
-    t.screen.height = 800
-	t.screen.vsync = true
+	t.window.width = 1280
+    t.window.height = 800
+	t.window.vsync = true
 end
